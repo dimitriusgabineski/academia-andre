@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia André Silva</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Academia André Silva</h1>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="#dashboard" class="menu__item">Dashboard</a></li>
+                    <li><a href="#cadastrar-aluno" class="menu__item">Cadastrar Aluno</a></li>
+                    <li><a href="#consultar-alunos" class="menu__item">Consultar Alunos</a></li>
+                    <li><a href="#editar-aluno" class="menu__item">Editar Aluno</a></li>
+                    <li><a href="#excluir-aluno" class="menu__item">Excluir Aluno</a></li>
+                    <li><a href="#modalidades" class="menu__item">Modalidades</a></li>
+                    <li><a href="#registrar-pagamento" class="menu__item">Registrar Pagamento</a></li>
+                    <li><a href="#controle-vencimentos" class="menu__item">Controle de Vencimentos</a></li>
+                    <li><a href="#relatorios" class="menu__item">Relatórios</a></li>
+                    <li><a href="#banco-dados" class="menu__item">Banco de Dados</a></li>
+                    <li><a href="#sobre-sistema" class="menu__item">Sobre o Sistema</a></li>
+                    <li><a href="#sair" class="menu__item menu__item--danger">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <section id="dashboard" class="section">
+                <h2 class="section__title">Dashboard</h2>
+                <div class="card-container">
+                    <article class="card">
+                        <h3 class="card__title">👥 Total de Alunos</h3>
+                        <p class="card__content">120</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">👨‍🏫 Total de Professores</h3>
+                        <p class="card__content">15</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">💰 Total Recebido</h3>
+                        <p class="card__content">R$ 25.000,00</p>
+                    </article>
+                </div>
+            </section>
+            <section id="modalidades" class="section">
+                <h2 class="section__title">Modalidades Disponíveis</h2>
+                <div class="card-container">
+                    <article class="list">
+                        <h3 class="list__title">Muay Thai</h3>
+                        <p>Horário: Segunda a Sexta às 19h</p>
+                        <p>Mensalidade: R$ 120,00</p>
+                        <p>Professores: João Silva, Ana Costa</p>
+                    </article>
+                    <article class="list">
+                        <h3 class="list__title">Musculação</h3>
+                        <p>Horário: Segunda a Sábado | 06h00 às 22h00</p>
+                        <p>Mensalidade: R$ 100,00</p>
+                        <p>Professores: Carlos Souza, Maria Lima</p>
+                    </article>
+                    <article class="list">
+                        <h3 class="list__title">CrossFit</h3>
+                        <p>Horário: Segunda, Quarta e Sexta | 06h30 às 07h30</p>
+                        <p>Mensalidade: R$ 150,00</p>
+                        <p>Professores: Pedro Santos, Fernanda Rocha</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Academia André Silva - Todos os direitos reservados</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const menu = document.querySelector('.nav__menu');
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('nav__menu--open');
+        });
+    </script>
+</body>
+</html>
