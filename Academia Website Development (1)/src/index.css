@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+  background: #0a0a0a;
+  color: #f0f0f0;
+}
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@theme inline {
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+  --color-panel: #1c1c1c;
+  --color-border: #2a2a2a;
+  --color-accent: #e8384a;
+  --color-accent-dim: #c42d3e;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-muted: #6b7280;
+}

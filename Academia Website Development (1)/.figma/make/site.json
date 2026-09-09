@@ -1,0 +1,10 @@
+{
+  "description": "Manage gym memberships, classes, payments, and reports with an intuitive system designed for fitness centers to streamline operations and track member status.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
